@@ -25,7 +25,7 @@ function Home({ characters, removeCharacterAction }) {
     )
 };
 
-const mapStateToProps = (state) => {
+const mapStateToProps = state => {
     return {
         characters: state.characters.array
     }
