@@ -13,7 +13,7 @@ import 'firebase/auth';
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
-firebase.analytics();
+// firebase.analytics();
 
 export function loginWithGoogle() {
   let provider = new firebase.auth.GoogleAuthProvider();
