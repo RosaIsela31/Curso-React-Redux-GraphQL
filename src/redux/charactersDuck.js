@@ -13,9 +13,13 @@ let GET_CHARACTERS = "GET_CHARACTERS";
 let GET_CHARACTERS_SUCCESS = "GET_CHARACTERS_SUCCESS";
 let GET_CHARACTERS_ERROR = "GET_CHARACTERS_ERROR";
 
+let REMOVE_CHARACTER = "REMOVE_CHARACTER";
+
 // reducer
 export default function reducer(state = initialData, action){
   switch(action.type){
+    case REMOVE_CHARACTER: 
+      return { ...state, array: action.payload }
     case GET_CHARACTERS:
       return { ...state, fetching: true }
     case GET_CHARACTERS_ERROR: 
@@ -32,7 +36,16 @@ export default function reducer(state = initialData, action){
 // dispatch ejecuta las acciones 
 // getState entrega el store
 
-export let removeCharacterAction = () => (dispatch, getState) => {}
+export let removeCharacterAction = () => (dispatch, getState) => {
+  // donde están los personajes
+  let { array } = getState().characters;
+  array.shift()
+  dispatch({
+    type: REMOVE_CHARACTER,
+    payload: [...array]
+  })
+  
+}
 
 // esta acción trae a los personajes
 export const getCharactersActions = () => (dispatch, getState) => {
