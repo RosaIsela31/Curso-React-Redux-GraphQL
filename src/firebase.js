@@ -1,5 +1,6 @@
 import firebase from 'firebase/app';
 import 'firebase/auth';
+import 'firebase/firestore';
 
  let firebaseConfig = {
   apiKey: "AIzaSyCe3Vd9tPFsa9ymyCrfLZebJSJVU8IjTek",
@@ -13,6 +14,13 @@ import 'firebase/auth';
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
+
+// Declarando la base de datos
+let db = firebase.firestore().collection('favs')
+// el array es favorites que está dentro del estado
+export function updateDB(array, uid) {
+  return db.doc(uid).set({ array })
+}
 
 export function signOutGoogle() {
   firebase.auth().signOut()
