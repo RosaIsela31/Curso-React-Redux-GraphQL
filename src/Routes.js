@@ -18,7 +18,7 @@ const PrivateRoute = ({ path, component, ...rest }) => {
 export default function Routes() {
     return (
         <Switch>
-            <Route exact path="/" component={Home} />
+            <PrivateRoute exact path="/" component={Home} />
             <PrivateRoute path="/favs" component={FavPage} />
             <Route path="/login" component={LoginPage} />
         </Switch>
