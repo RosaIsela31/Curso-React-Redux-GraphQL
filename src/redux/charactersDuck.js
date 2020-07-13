@@ -1,4 +1,5 @@
 import axios from 'axios';
+import { updateDB } from '../firebase';
 
 // constants
 let initialData = {
@@ -41,8 +42,10 @@ export default function reducer(state = initialData, action){
 // getState entrega el store
 export let addToFavoritesAction = () => (dispatch, getState) => {
   let { array, favorites } = getState().characters;
+  let { uid } = getState().user;
   let char = array.shift();
   favorites.push(char);
+  updateDB(favorites, uid)
   dispatch({
     type: ADD_TO_FAVORITES,
     payload: { array: [...array], favorites: [...favorites] }
