@@ -1,4 +1,5 @@
 import { loginWithGoogle, signOutGoogle } from '../firebase';
+import { retrieveFavs } from './charactersDuck';
 
 // constants 
 let initialData = {
@@ -70,6 +71,7 @@ export let doGoogleLoginAction = () => (dispatch, getState) => {
          }
       })
       saveStorage(getState())
+      retrieveFavs()(dispatch, getState)
     })
     .catch( e => {
       console.log(e);

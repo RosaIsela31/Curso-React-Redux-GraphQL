@@ -17,6 +17,13 @@ firebase.initializeApp(firebaseConfig);
 
 // Declarando la base de datos
 let db = firebase.firestore().collection('favs')
+
+export function getFavs(uid) {
+  return db.doc(uid).get()
+    .then( snap => { return snap.data().array })
+}
+
+
 // el array es favorites que está dentro del estado
 export function updateDB(array, uid) {
   return db.doc(uid).set({ array })
