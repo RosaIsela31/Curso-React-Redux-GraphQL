@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/Curso-React-Redux-GraphQL/static/css/main.59500ea7.chunk.css",
+    "main.js": "/Curso-React-Redux-GraphQL/static/js/main.7b92c927.chunk.js",
+    "main.js.map": "/Curso-React-Redux-GraphQL/static/js/main.7b92c927.chunk.js.map",
+    "runtime-main.js": "/Curso-React-Redux-GraphQL/static/js/runtime-main.ff6c9031.js",
+    "runtime-main.js.map": "/Curso-React-Redux-GraphQL/static/js/runtime-main.ff6c9031.js.map",
+    "static/css/2.a751895c.chunk.css": "/Curso-React-Redux-GraphQL/static/css/2.a751895c.chunk.css",
+    "static/js/2.03195307.chunk.js": "/Curso-React-Redux-GraphQL/static/js/2.03195307.chunk.js",
+    "static/js/2.03195307.chunk.js.map": "/Curso-React-Redux-GraphQL/static/js/2.03195307.chunk.js.map",
+    "index.html": "/Curso-React-Redux-GraphQL/index.html",
+    "precache-manifest.b955e8a81af622fb457916a6f4154aa7.js": "/Curso-React-Redux-GraphQL/precache-manifest.b955e8a81af622fb457916a6f4154aa7.js",
+    "service-worker.js": "/Curso-React-Redux-GraphQL/service-worker.js",
+    "static/css/2.a751895c.chunk.css.map": "/Curso-React-Redux-GraphQL/static/css/2.a751895c.chunk.css.map",
+    "static/css/main.59500ea7.chunk.css.map": "/Curso-React-Redux-GraphQL/static/css/main.59500ea7.chunk.css.map",
+    "static/js/2.03195307.chunk.js.LICENSE": "/Curso-React-Redux-GraphQL/static/js/2.03195307.chunk.js.LICENSE",
+    "static/media/font-awesome.css": "/Curso-React-Redux-GraphQL/static/media/fontawesome-webfont.fee66e71.woff"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ff6c9031.js",
+    "static/css/2.a751895c.chunk.css",
+    "static/js/2.03195307.chunk.js",
+    "static/css/main.59500ea7.chunk.css",
+    "static/js/main.7b92c927.chunk.js"
+  ]
+}
